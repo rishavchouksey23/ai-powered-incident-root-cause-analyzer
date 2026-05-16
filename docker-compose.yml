@@ -1,0 +1,12 @@
+
+version: '3.9'
+services:
+  incident-service:
+    image: openjdk:17
+    ports:
+      - "8080:8080"
+
+  ai-orchestrator:
+    image: python:3.11
+    ports:
+      - "8000:8000"
